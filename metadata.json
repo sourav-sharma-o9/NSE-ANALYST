@@ -1,0 +1,6 @@
+{
+  "name": "NSE Intel: AI Stock Analytics",
+  "description": "Real-time NSE stock intelligence powered by Gemini. Track NIFTY indices, analyze past deals, current situation, and future growth prospects with deep investor insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
