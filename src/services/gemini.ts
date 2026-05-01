@@ -1,7 +1,10 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { StockAnalysis } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
+import { GoogleGenerativeAI } from "@google/generative-ai";
+
+// Use import.meta.env for Vite projects
+const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 
 export async function analyzeStock(symbol: string): Promise<StockAnalysis> {
   const response = await ai.models.generateContent({
